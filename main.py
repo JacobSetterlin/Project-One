@@ -8,3 +8,6 @@ available_planets = ["Mercury",
                      "Neptune"]
 
 print("What planet would you like to learn about?")
+print("Available Planets:")
+for planet in available_planets:
+    print(planet)
