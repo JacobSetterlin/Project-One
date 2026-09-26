@@ -56,3 +56,6 @@ if user_input == "mercury":
 
 elif user_input == "venus":
     print_planet_info("venus", 0.72, "carbon dioxide", "rocky with many mountains.")
+
+elif user_input == "earth":
+    print_planet_info("earth", 1, "oxygen", "earth-like.")
