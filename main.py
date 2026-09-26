@@ -38,6 +38,8 @@ def print_planet_info(name: str, distance_from_sun: int, atmosphere: str, surfac
     else:
         print(f"The surface of {name} is {surface}.")
 
+    input("Press enter to continue.")
+
 available_planets = ["Mercury",
                      "Venus",
                      "Earth",
@@ -47,36 +49,42 @@ available_planets = ["Mercury",
                      "Uranus",
                      "Neptune"]
 
-print("Enter the name of the planet you want to learn about, or press q to quit.")
-print("Available Planets:")
-for planet in available_planets:
-    print(planet)
-line_break()
+while True:
+    print("Enter the name of the planet you want to learn about, or press q to quit.")
+    print("Available Planets:")
+    for planet in available_planets:
+        print(planet)
+    line_break()
 
-user_input = input().lower()
-line_break()
+    user_input = input().lower()
+    line_break()
 
-if user_input == "mercury":
-    print_planet_info("Mercury", 0.4, "sodium", "rocky.")
+    if user_input == "mercury":
+        print_planet_info("Mercury", 0.4, "sodium", "rocky.")
 
-elif user_input == "venus":
-    print_planet_info("venus", 0.72, "carbon dioxide", "rocky with many mountains.")
+    elif user_input == "venus":
+        print_planet_info("venus", 0.72, "carbon dioxide", "rocky with many mountains.")
 
-elif user_input == "earth":
-    print_planet_info("earth", 1, "oxygen", "earth-like.")
+    elif user_input == "earth":
+        print_planet_info("earth", 1, "oxygen", "earth-like.")
 
-elif user_input == "mars":
-    print_planet_info("mars", 1.5, "carbon dioxide", "believed to contain lots of iron.")
+    elif user_input == "mars":
+        print_planet_info("mars", 1.5, "carbon dioxide", "believed to contain lots of iron.")
 
-elif user_input == "jupiter":
-    print_planet_info("jupiter", 5.2, "ammonia ice", "none")
+    elif user_input == "jupiter":
+        print_planet_info("jupiter", 5.2, "ammonia ice", "none")
 
-#Information about the atmosphere of saturn comes from the European Space Agency.
-elif user_input == "saturn":
-    print_planet_info("saturn", 9.5, "hydrogen", "none")
+    #Information about the atmosphere of saturn comes from the European Space Agency.
+    elif user_input == "saturn":
+        print_planet_info("saturn", 9.5, "hydrogen", "none")
 
-elif user_input == "uranus":
-    print_planet_info("uranus", 19, "hydrogen", "liquidy.")
+    elif user_input == "uranus":
+        print_planet_info("uranus", 19, "hydrogen", "liquidy.")
 
-elif user_input == "neptune":
-    print_planet_info("neptune", 30, "hydrogen", "none")
+    elif user_input == "neptune":
+        print_planet_info("neptune", 30, "hydrogen", "none")
+
+    elif user_input == "q":
+        quit()
+
+    line_break()
