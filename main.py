@@ -62,3 +62,6 @@ elif user_input == "earth":
 
 elif user_input == "mars":
     print_planet_info("mars", 1.5, "carbon dioxide", "believed to contain lots of iron.")
+
+elif user_input == "jupiter":
+    print_planet_info("jupiter", 5.2, "ammonia ice", "none")
