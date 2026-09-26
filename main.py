@@ -74,3 +74,6 @@ elif user_input == "saturn":
 
 elif user_input == "uranus":
     print_planet_info("uranus", 19, "hydrogen", "liquidy.")
+
+elif user_input == "neptune":
+    print_planet_info("neptune", 30, "hydrogen", "none")
