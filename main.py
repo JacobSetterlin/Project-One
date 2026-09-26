@@ -42,7 +42,7 @@ available_planets = ["Mercury",
                      "Uranus",
                      "Neptune"]
 
-print("What planet would you like to learn about?")
+print("Enter the name of the planet you want to learn about, or press q to quit.")
 print("Available Planets:")
 for planet in available_planets:
     print(planet)
