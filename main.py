@@ -59,3 +59,6 @@ elif user_input == "venus":
 
 elif user_input == "earth":
     print_planet_info("earth", 1, "oxygen", "earth-like.")
+
+elif user_input == "mars":
+    print_planet_info("mars", 1.5, "carbon dioxide", "believed to contain lots of iron.")
