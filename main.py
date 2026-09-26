@@ -5,6 +5,8 @@ Jacob Setterlin
 This program is used to find provide the user with the information of a planet 
 they want to know about.
 
+All information comes from NASA unless stated otherwise.
+
 Last Updated: 9/26/2026"""
 
 def line_break():
@@ -65,3 +67,7 @@ elif user_input == "mars":
 
 elif user_input == "jupiter":
     print_planet_info("jupiter", 5.2, "ammonia ice", "none")
+
+#Information about the atmosphere of saturn comes from the European Space Agency.
+elif user_input == "saturn":
+    print_planet_info("saturn", 9.5, "hydrogen", "none")
