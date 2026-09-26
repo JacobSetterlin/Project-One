@@ -31,9 +31,12 @@ def print_planet_info(name: str, distance_from_sun: int, atmosphere: str, surfac
     """
 
     print(f"{name}:")
-    print(f"Distance from our sun: {distance_from_sun}")
+    print(f"Distance from our sun: {distance_from_sun} astronomical units.")
     print(f"The atmosphere of {name} is made of {atmosphere}.")
-    print(f"The surface of {name} is {surface}")
+    if surface == "none":
+        print(f"{name} is a gas giant.")
+    else:
+        print(f"The surface of {name} is {surface}.")
 
 available_planets = ["Mercury",
                      "Venus",
