@@ -71,3 +71,6 @@ elif user_input == "jupiter":
 #Information about the atmosphere of saturn comes from the European Space Agency.
 elif user_input == "saturn":
     print_planet_info("saturn", 9.5, "hydrogen", "none")
+
+elif user_input == "uranus":
+    print_planet_info("uranus", 19, "hydrogen", "liquidy.")
