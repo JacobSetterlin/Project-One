@@ -47,3 +47,9 @@ print("Available Planets:")
 for planet in available_planets:
     print(planet)
 line_break()
+
+user_input = input().lower()
+line_break()
+
+if user_input == "mercury":
+    print_planet_info("Mercury", 0.4, "sodium", "rocky.")
