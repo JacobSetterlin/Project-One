@@ -13,7 +13,7 @@ def line_break():
     """Used to seperate different messages and user input in the console."""
     print("--------------------")
 
-def print_planet_info(name: str, distance_from_sun: int, atmosphere: str, surface: str):
+def print_planet_info(name: str, distance_from_sun: float, atmosphere: str, surface: str):
     """
     This function is used to print information about a planet.
     
