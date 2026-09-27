@@ -7,7 +7,7 @@ they want to know about.
 
 All information comes from NASA unless stated otherwise.
 
-Last Updated: 9/26/2026"""
+Last Updated: 9/27/2026"""
 
 def line_break():
     """Used to seperate different messages and user input in the console."""
@@ -49,6 +49,7 @@ available_planets = ["Mercury",
                      "Uranus",
                      "Neptune"]
 
+print("All information is retrieved from NASA unless stated otherwise.")
 while True:
     print("Enter the name of the planet you want to learn about, or press q to quit.")
     print("Available Planets:")
@@ -76,8 +77,9 @@ while True:
 
     #Information about the atmosphere of saturn comes from the European Space Agency.
     elif user_input == "saturn":
+        print("Information about Saturn's atmosphere comes from the European Space Agency.")
         print_planet_info("Saturn", 9.5, "hydrogen", "none")
-
+    
     elif user_input == "uranus":
         print_planet_info("Uranus", 19, "hydrogen", "liquidy.")
 
