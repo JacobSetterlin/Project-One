@@ -40,14 +40,14 @@ def print_planet_info(name: str, distance_from_sun: float, atmosphere: str, surf
 
     input("Press enter to continue.")
 
-available_planets = ["Mercury",
+available_planets = ("Mercury",
                      "Venus",
                      "Earth",
                      "Mars",
                      "Jupiter",
                      "Saturn",
                      "Uranus",
-                     "Neptune"]
+                     "Neptune")
 
 print("All information is retrieved from NASA unless stated otherwise.")
 while True:
